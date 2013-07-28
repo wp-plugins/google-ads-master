@@ -2,7 +2,7 @@
 /**
 Plugin Name: Google Ads Master
 Plugin URI: http://wordpress.techgasp.com/google-ads-master/
-Version: 2.0
+Version: 2.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: google-ads-master
@@ -32,7 +32,11 @@ define('TECHGASP_GOOGLEADSMASTER_ID', 'google-ads-master-options');
 // DEFINE PLUGIN NICK
 define('TECHGASP_GOOGLEADSMASTER_NICK', 'Google Ads Master');
 
+// HOOK WIDGET
 require_once('techgasp-googleadsmaster-widget.php');
+
+// HOOK INVITATION
+require_once('techgasp-googleadsmaster-invite.php');
 
     class techgasp_googleadsmaster
     {
