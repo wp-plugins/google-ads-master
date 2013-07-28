@@ -35,6 +35,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Insert desired google ad (allows ads styling)
 * Shortcode Framework. Publish widget inside pages and posts
 
+[Visit our Website for Professional Plugins](http://wordpress.techgasp.com)
 
 == Installation ==
 
@@ -42,7 +43,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 2. Activate in the "Plugins" admin panel.
 3. Visit the "Widget Page | Google Ads Master" to configure the settings and your template widget position.
 
-[VISIT OUR WEBSITE FOR MORE PROFESSIONAL PLUGINS](http://wordpress.techgasp.com)
+[Visit our Website for Professional Plugins](http://wordpress.techgasp.com)
 
 
 == Frequently Asked Questions ==
