@@ -2,7 +2,7 @@
 /**
 Plugin Name: Google Ads Master
 Plugin URI: http://wordpress.techgasp.com/google-ads-master/
-Version: 2.1
+Version: 2.2
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: google-ads-master
@@ -101,7 +101,7 @@ require_once('techgasp-googleadsmaster-invite.php');
 		*/
 		public static function content_with_quote($content)
 		{
-			$quote = '<p><blockquote>' . get_option('tsm_quote') . '</blockquote></p>';
+			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
 		
