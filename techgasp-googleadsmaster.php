@@ -2,7 +2,7 @@
 /**
 Plugin Name: Google Ads Master
 Plugin URI: http://wordpress.techgasp.com/google-ads-master/
-Version: 2.2
+Version: 2.3
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: google-ads-master
@@ -106,7 +106,7 @@ require_once('techgasp-googleadsmaster-invite.php');
 		}
 		
 		// Add settings link on plugin page
-		public function techgasp_googleadsmaster_link($links, $file) {
+		public static function techgasp_googleadsmaster_link($links, $file) {
 		static $this_plugin;
 		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
 		if ($file == $this_plugin){
