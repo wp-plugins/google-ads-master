@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, google, adsense, ads, google ad, google adsense, make money, revenue
 Requires at least: 3.5
-Tested up to: 3.5.2
+Tested up to: 3.7
 Stable tag: 2.3
 License: GPLv2 or later
 
