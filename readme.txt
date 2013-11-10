@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, google, adsense, ads, google ad, google adsense, make money, revenue
 Requires at least: 3.5
-Tested up to: 3.7
-Stable tag: 4.0
+Tested up to: 3.7.1
+Stable tag: 4.0.1
 License: GPLv2 or later
 
 Google Ads Master for wordpress is the professional plugin you need to generate income with your website.
@@ -87,6 +87,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.0.1 =
+* Changing directory calls to support Multi-Domains wordpress installations
 
 = 4.0 =
 * Implementing New Shortcode Framework v2. Shortcode box will now be available when editing a page or a post
