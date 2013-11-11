@@ -2,7 +2,7 @@
 /**
 Plugin Name: Google Ads Master
 Plugin URI: http://wordpress.techgasp.com/google-ads-master/
-Version: 4.0.1
+Version: 4.0.2
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: google-ads-master
@@ -74,7 +74,7 @@ require_once( dirname( __FILE__ ) . '/includes/google-ads-master-widget.php');
 			}
 			$plugin_id = GOOGLE_ADS_MASTER_ID;
 			// display options page
-			include( dirname( __FILE__ ) . '/includes/google-ads-master-admin.php'));
+			include( dirname( __FILE__ ) . '/includes/google-ads-master-admin.php');
 		}
 		/** function/method
 		* Usage: show options/settings form page
@@ -84,7 +84,7 @@ require_once( dirname( __FILE__ ) . '/includes/google-ads-master-widget.php');
 		 public static function google_ads_master_widget()
 		{
 			// display widget page
-			include( dirname( __FILE__ ) . '/includes/google-ads-master-widget.php'));
+			include( dirname( __FILE__ ) . '/includes/google-ads-master-widget.php');
 		}
 		/** function/method
 		* Usage: filtering the content
