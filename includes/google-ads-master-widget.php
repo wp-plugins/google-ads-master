@@ -69,6 +69,14 @@ class google_ads_master_widget extends WP_Widget {
 	<div class="description">Copy and Paste your google ad script code from Google AdSense website.</div>
 	<br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+		<p>
+		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+		&nbsp;
+		<b>Shortcode Framework</b>
+		</p>
+		<div class="description">The shortcode framework allows you to insert Google Ads inside Pages & Posts without the need of extra plugins or gimmicks. Fast page load times and top SEO. Only available in advanced version.</div>
+	<br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
