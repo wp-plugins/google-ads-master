@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, google, adsense, ads, google ad, google adsense, make money, revenue
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 4.1
+Tested up to: 3.8.1
+Stable tag: 4.3
 License: GPLv2 or later
 
 Google Ads Master for wordpress is the professional plugin you need to generate income with your website.
@@ -23,19 +23,42 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 **LITE Version Contains:**
 
-* Display or hide Widget Title
-* Display or hide Google Adsense ads
-* Insert desired google ad (allows ads styling)
+* Display, Hide or Change any Widget Title
+
+* Google Ads Master Viral Widget:
+* Perfect to increase your Google Rank and Search Engine Presence with Google Plus Button
+* Increased Google SEO performance
+* Perfect to boost your website traffic and gather new users with Google Share Button
+* Works great when published under the Ads Widget
+
+* Google Ads Master Ads Widget:
+* Top of the line Google Ads Widget (allows ads styling)
+* Minimal code for a Small system trace with extremely fast page load times
+* For heavy duty wordpress websites where google ads income needs to be reliable and steady
 
 **ADVANCED Version Contains:**
 
-* Contains the extra Shortcode Framework v2. Publish widget inside pages and posts
+* Display, Hide or Change any Widget Title
+
+* Google Ads Master Viral Widget:
+* Perfect to increase your Google Rank and Search Engine Presence with Google Plus Button
+* Increased Google SEO performance
+* Perfect to boost your website traffic and gather new users with Google Share Button
+* Works great when published under the Ads Widget
+
+* Google Ads Master Ads Widget:
+* Top of the line Google Ads Widget (allows ads styling)
+* Minimal code for a Small system trace with extremely fast page load times
+* For heavy duty wordpress websites where google ads income needs to be reliable and steady
+
+* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
+* Shortcodes allow you to professionally display your instagram photos inside your wordpress pages and posts
 * [Advanced Version Link](http://wordpress.techgasp.com/google-ads-master/)
 
 **ONLINE DEMO**
 
 * Right of the page, sidebar widget
-* Inside the post, with shortcode framework v2
+* Inside the post, with shortcode framework
 * [Demo Link](http://wordpress.techgasp.com/google-ads-master)
 
 **More High Quality Plugins?**
@@ -48,9 +71,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Installation ==
 
-1. Use the Wordpress Installer, Updater.
-2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Google Ads Master" to configure the settings and your template widget position.
+1. Use the Wordpress Installer, Updater
+2. Activate in the "Plugins" admin panel
+3. Visit the "Widget Page | Google Ads Master Widgets" to configure widgets settings and your template widget positions
 4. [Google Ads Master Documentation](http://wordpress.techgasp.com/google-ads-master-documentation/)
 
 
@@ -59,16 +82,17 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 = Issues with Ads display =
 * Please update to latest version. Up-to-date API's are available
 
-= Where is Shortcode? =
-* Advanced Version contains all plugin options and the Shortcode Framework v2, publish widget inside pages and posts
+= Insert Shortcode in Pages or Posts =
+* Advanced Version Add-ons contain the shortcode framework v3
+* Insert the universal shortcode into any page or post. [google-ads-master-un]
+* Insert the individual shortcode into any page or post. [google-ads-master]
 * [Advanced Version Link](http://wordpress.techgasp.com/google-ads-master/)
-* Insert the code into the page or post. [google-ads-master]
 
-= What's this Shortcode Framework v2 =
-* It's a framework developed by TechGasp and built upon wordpress marvellous resources.
-* Allows users to quickly and easily display plugins or widgets inside their pages and posts.
-* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2.
-* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
+= What's this Shortcode Framework v3 =
+* It's a framework developed by TechGasp and built upon wordpress marvellous resources
+* Allows users to quickly and easily display plugins or widgets inside their pages and posts
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v3
+* [About Shortcode Framework v3](http://wordpress.techgasp.com/techgasp-wordpress-framework-v3)
 
 = Need More Help =
 * [Google Ads Master Documentation](http://wordpress.techgasp.com/google-ads-master-documentation)
@@ -77,16 +101,28 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Screenshots ==
 
-1. Widget With Title + Google Ads Vertical Banner.
-2. Widget Without Title + Google Ads another Vertical Banner.
-3. Widget Without Title, Google Ads Horizontal Banner.
-4. Widget Without Title, Google Ads Horizontal Small Banner.
-5. Widget With Title, Google Ads Small Square Ad.
-6. Widget With Title, Google Ads Horizontal Banner.
-7. Widget inside pages and posts. Shortcode framework implementations. Google Ad Square.
+1. Google Ads Widget, Vertical Ad Banner.
+2. Google Ads Widget, Vertical Ad Banner.
+3. Google Ads Widget, Horizontal Ad Banner.
+4. Google Ads Widget, Horizontal Small Ad Banner.
+5. Google Ads Widget, Small Square Ad.
+6. Google Ads Widget, Horizontal Ad Banner.
+7. Google Ads Master Viral Widget, Google Plus and Google Share
+8. Individual Shortcode inside pages and posts. Shortcode framework implementation.
+9. Universal Shortcode inside pages and posts. Shortcode framework implementation.
 
 
 == Changelog ==
+
+= 4.3 =
+* New TechGasp Plugin Framework
+* New Plugin Menu
+* New Administrator Page
+* New Universal Shortcode that can be combined with Individual Shortcodes in Pages and Posts
+* Adding index SEC
+* New Google API
+* New Google Ads Master Viral Widget
+* New Google Ads Master Ads Widget
 
 = 4.1 =
 * Wordpress 3.8 Ready
@@ -135,8 +171,11 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Upgrade Notice ==
 
+= 4.3 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v3
+
 = 4.0 =
-* IMPORTANT Upgrade to new TechGasp Plugin Framework
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v2
 
 = 2.0 =
 * IMPORTANT Upgrade to Stable release
