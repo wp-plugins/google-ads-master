@@ -2,7 +2,7 @@
 /**
 Plugin Name: Google Ads Master
 Plugin URI: http://wordpress.techgasp.com/google-ads-master/
-Version: 4.3.5
+Version: 4.3.6
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: google-ads-master
@@ -29,9 +29,9 @@ if(!class_exists('google_ads_master')) :
 ///////DEFINE ID//////
 define('GOOGLE_ADS_MASTER_ID', 'google-ads-master');
 ///////DEFINE VERSION///////
-define( 'google_ads_master_VERSION', '4.3.5' );
+define( 'google_ads_master_VERSION', '4.3.6' );
 global $google_ads_master_version, $google_ads_master_name;
-$google_ads_master_version = "4.3.5"; //for other pages
+$google_ads_master_version = "4.3.6"; //for other pages
 $google_ads_master_name = "Google Ads Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'google_ads_master_installed_version', $google_ads_master_version );
