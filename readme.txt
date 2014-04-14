@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, google, adsense, ads, google ad, google adsense, make money, revenue
 Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 4.3.6
+Tested up to: 3.8.2
+Stable tag: 4.3.7
 License: GPLv2 or later
 
 Google Ads Master for wordpress is the professional plugin you need to generate income with your website.
@@ -25,13 +25,13 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 * Display, Hide or Change any Widget Title
 
-* Google Ads Master Viral Widget:
+* Google Ads Master Viral Widget
 * Perfect to increase your Google Rank and Search Engine Presence with Google Plus Button
 * Increased Google SEO performance
 * Perfect to boost your website traffic and gather new users with Google Share Button
 * Works great when published under the Ads Widget
 
-* Google Ads Master Ads Widget:
+* Google Ads Master Ads Widget
 * Top of the line Google Ads Widget (allows ads styling)
 * Minimal code for a Small system trace with extremely fast page load times
 * For heavy duty wordpress websites where google ads income needs to be reliable and steady
@@ -40,18 +40,18 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 * Display, Hide or Change any Widget Title
 
-* Google Ads Master Viral Widget:
+* Google Ads Master Viral Widget
 * Perfect to increase your Google Rank and Search Engine Presence with Google Plus Button
 * Increased Google SEO performance
 * Perfect to boost your website traffic and gather new users with Google Share Button
 * Works great when published under the Ads Widget
 
-* Google Ads Master Ads Widget:
+* Google Ads Master Ads Widget
 * Top of the line Google Ads Widget (allows ads styling)
 * Minimal code for a Small system trace with extremely fast page load times
 * For heavy duty wordpress websites where google ads income needs to be reliable and steady
 
-* TechGasp Shortcode Framework v3:
+* TechGasp Shortcode Framework v3
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
 * Individual Shortcode for each page or post, individual customized shortcode per page or post
 * Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
@@ -115,6 +115,11 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.3.7 =
+* Code optimization
+* if, else properties
+* Wordpress 3.8.2 Ready!
 
 = 4.3.6 =
 * Added automatic deletion of site_transients

@@ -33,8 +33,11 @@ class google_ads_master_widget_ads extends WP_Widget {
 	else{
 	}
 	//Display Google Ads
-	if ( $show_googleads )
+	if ( $show_googleads ){
 		echo $googleads_code;
+	}
+	else{
+	}
 	echo $after_widget;
 	}
 	//Update the widget
@@ -82,9 +85,9 @@ class google_ads_master_widget_ads extends WP_Widget {
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
-	<b>Google Ads Master Website</b>
+	<b><?php echo get_option('google_ads_master_name'); ?> Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Google Ads Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="Google Ads Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Visit Website">Get Add-ons</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?>">Get Add-Ons</a></p>
 	<?php
 	}
  }
