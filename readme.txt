@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, google, adsense, ads, google ad, google adsense, make money, revenue
 Requires at least: 3.5
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: 4.3.7
 License: GPLv2 or later
 
@@ -119,7 +119,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 = 4.3.7 =
 * Code optimization
 * if, else properties
-* Wordpress 3.8.2 Ready!
+* Wordpress 3.8.3 Ready!
 
 = 4.3.6 =
 * Added automatic deletion of site_transients
