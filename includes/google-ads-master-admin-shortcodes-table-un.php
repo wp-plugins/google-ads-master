@@ -16,8 +16,8 @@ class google_ads_master_admin_shortcodes_table_un extends WP_List_Table {
 	<thead>
 		<tr>
 			<th id="cb" class="manage-column column-cb check-column" scope="col" style="vertical-align:middle"><input type="checkbox"></th>
-			<th id="columnname" class="manage-column column-columnname" scope="col" width="200"><legend><h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" /><?php _e('&nbsp;Universal Shortcode', 'google_ads_master'); ?></h3></legend></th>
-			<th id="columnname" class="manage-column column-columnname" scope="col"></th>
+			<th id="columnname" class="manage-column column-columnname" scope="col" width="250"><legend><h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" /><?php _e('&nbsp;Universal Shortcode', 'google_ads_master'); ?></h3></legend></th>
+			<th id="columnname" class="manage-column column-columnname" scope="col" width="250"></th>
 			<th id="columnname" class="manage-column column-columnname" scope="col"><legend><h3><?php _e('&nbsp;[google-ads-master-un]', 'google_ads_master'); ?></h3></legend></th>
 		</tr>
 	</thead>
@@ -25,7 +25,7 @@ class google_ads_master_admin_shortcodes_table_un extends WP_List_Table {
 	<tfoot>
 		<tr>
 			<th class="manage-column column-cb check-column" scope="col"></th>
-			<th class="manage-column column-columnname" scope="col" width="200"></th>
+			<th class="manage-column column-columnname" scope="col"></th>
 			<th class="manage-column column-columnname" scope="col"></th>
 			<th class="manage-column column-columnname" scope="col"></th>
 		</tr>
@@ -42,7 +42,7 @@ class google_ads_master_admin_shortcodes_table_un extends WP_List_Table {
 		</tr>
 	</tbody>
 </table>
-<p class="submit"><input class='button-primary' type='submit' name='update' value='<?php _e("Save Shortcode UN", 'google_ads_master'); ?>' id='submitbutton' /></p>
+
 </fieldset>
 </form>
 <?php

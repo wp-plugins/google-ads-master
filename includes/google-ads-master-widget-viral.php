@@ -23,26 +23,36 @@ class google_ads_master_widget_viral extends WP_Widget {
 		$google_plus_bubble = isset( $instance['google_plus_bubble'] ) ? $instance['google_plus_bubble'] :false;
 		$show_google_share = isset( $instance['show_google_share'] ) ? $instance['show_google_share'] :false;
 		$google_share_bubble = isset( $instance['google_share_bubble'] ) ? $instance['google_share_bubble'] :false;
+		$show_google_follow = isset( $instance['show_google_follow'] ) ? $instance['show_google_follow'] :false;
+		$google_follow_bubble = isset( $instance['google_follow_bubble'] ) ? $instance['google_follow_bubble'] :false;
+		$google_follow_page = $instance['google_follow_page'];
 		echo $before_widget;
 		
 		// Display the widget title
 	if ( $google_ads_title ){
 		if (empty ($google_ads_title_new)){
-		$google_ads_title_new = get_option('google_ads_master_name');
-		}
+			if(is_multisite()){
+			$google_ads_title_new = get_site_option('google_ads_master_name');
+			}
+			else{
+			$google_ads_title_new = get_option('google_ads_master_name');
+			}
 		echo $before_title . $google_ads_title_new . $after_title;
+		}
+		else{
+		echo $before_title . $google_ads_title_new . $after_title;
+		}
 	}
 	else{
 	}
-
 	//Display Google Plus
 	if ( $show_google_plus ){
 		//Prepare Google Plus Bubble Count
 		if ( $google_plus_bubble ){
-			$google_plus_bubble_create = '<div class="g-plusone"></div>';
+			$google_plus_bubble_create = '<div class="g-plusone" data-height="24"></div>';
 		}
 		else{
-			$google_plus_bubble_create = '<div class="g-plusone" data-annotation="none" ></div>&nbsp;&nbsp;&nbsp;';
+			$google_plus_bubble_create = '<div class="g-plusone" data-annotation="none" data-height="24"></div>&nbsp;&nbsp;&nbsp;';
 		}
 	}
 	else{
@@ -63,9 +73,35 @@ class google_ads_master_widget_viral extends WP_Widget {
 		$google_share_bubble_create = false;
 	}
 
-	echo '<div style="display:flex;">' .
-		$google_plus_bubble_create . $google_share_bubble_create .
+		//Display Google Folllow
+	if ( $show_google_follow ){
+		//Prepare Google Share Bubble Count
+		if ( $google_follow_bubble ){
+			$google_follow_bubble_create = '<div class="g-follow" data-annotation="bubble" data-height="24" data-href="'.$google_follow_page.'" data-rel="author"></div>';
+		}
+		else{
+			$google_follow_bubble_create = '<div class="g-follow" data-annotation="none" data-height="24" data-href="'.$google_follow_page.'" data-rel="author"></div>';
+		}
+	}
+	else{
+		$google_share_bubble_create = false;
+	}
+
+
+	echo '<div style="width:100%; overflow: visible;">' .
+		'<div style="width:32%; float: left;">' .
+		$google_plus_bubble_create .
 		'</div>' .
+		'<div style="width:33%; float: left;">' .
+		$google_share_bubble_create .
+		'</div>' .
+		'<div style="width:33%; float: left;">' .
+		$google_follow_bubble_create .
+		'</div>' .
+		'</div>' .
+		
+		
+		
 		'<script type="text/javascript">' .
 		'(function() {' .
 		'var po = document.createElement('.$googleadsspacer.'script'.$googleadsspacer.'); po.type = '.$googleadsspacer.'text/javascript'.$googleadsspacer.'; po.async = true;' .
@@ -85,11 +121,14 @@ class google_ads_master_widget_viral extends WP_Widget {
 		$instance['google_plus_bubble'] = $new_instance['google_plus_bubble'];
 		$instance['show_google_share'] = $new_instance['show_google_share'];
 		$instance['google_share_bubble'] = $new_instance['google_share_bubble'];
+		$instance['show_google_follow'] = $new_instance['show_google_follow'];
+		$instance['google_follow_bubble'] = $new_instance['google_follow_bubble'];
+		$instance['google_follow_page'] = $new_instance['google_follow_page'];
 		return $instance;
 	}
 	function form( $instance ) {
 	//Set up some default widget settings.
-	$defaults = array( 'google_ads_title_new' => __('Google Ads Master', 'google_ads_master'), 'google_ads_title' => true, 'google_ads_title_new' => false, 'show_google_plus' => false, 'google_plus_bubble' => false, 'show_google_share' => false, 'google_share_bubble' => false );
+	$defaults = array( 'google_ads_title_new' => __('Google Ads Master', 'google_ads_master'), 'google_ads_title' => true, 'google_ads_title_new' => false, 'show_google_plus' => true, 'google_plus_bubble' => true, 'show_google_share' => true, 'google_share_bubble' => true, 'show_google_follow' => true, 'google_follow_bubble' => true, 'google_follow_page' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
 		<br>
@@ -129,11 +168,29 @@ class google_ads_master_widget_viral extends WP_Widget {
 	</p>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	&nbsp;
+	<input type="checkbox" <?php checked( (bool) $instance['show_google_follow'], true ); ?> id="<?php echo $this->get_field_id( 'show_google_follow' ); ?>" name="<?php echo $this->get_field_name( 'show_google_follow' ); ?>" />
+	<label for="<?php echo $this->get_field_id( 'show_google_follow' ); ?>"><b><?php _e('Display Google Follow Button', 'google_ads_master'); ?></b></label>
+	</p>
+	<p>
+	<input type="checkbox" <?php checked( (bool) $instance['google_follow_bubble'], true ); ?> id="<?php echo $this->get_field_id( 'google_follow_bubble' ); ?>" name="<?php echo $this->get_field_name( 'google_follow_bubble' ); ?>" />
+	<label for="<?php echo $this->get_field_id( 'google_follow_bubble' ); ?>"><b><?php _e('Google Follow Bubble Count', 'google_ads_master'); ?></b></label>
+	</p>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	&nbsp;
+	<label for="<?php echo $this->get_field_id( 'google_follow_page' ); ?>"><b><?php _e('Google+ User Page Link:', 'google_ads_master'); ?></label></b></br>
+	<input id="<?php echo $this->get_field_id( 'google_follow_page' ); ?>" name="<?php echo $this->get_field_name( 'google_follow_page' ); ?>" value="<?php echo $instance['google_follow_page']; ?>" style="width:auto;" />
+	<div class="description">Example: <b>https://plus.google.com/113505825008581970710/</b></div>
+	</p>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
-	<b>Google Ads Master Website</b>
+	<b><?php echo get_option('google_ads_master_name'); ?> Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Google Ads Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="Google Ads Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Visit Website">Get Add-ons</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Get Add-ons">Get Add-ons</a></p>
 	<?php
 	}
  }

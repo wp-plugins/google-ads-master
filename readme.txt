@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, google, adsense, ads, google ad, google adsense, make money, revenue
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 4.3.7
+Tested up to: 4.1.1
+Stable tag: 4.4.1.4
 License: GPLv2 or later
 
 Google Ads Master for wordpress is the professional plugin you need to generate income with your website.
@@ -26,30 +26,38 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Display, Hide or Change any Widget Title
 
 * Google Ads Master Viral Widget
+* Includes Google Share button, Google +1 button and Google Share button.
+* Activate the buttons you need and your their bubble count number
 * Perfect to increase your Google Rank and Search Engine Presence with Google Plus Button
 * Increased Google SEO performance
 * Perfect to boost your website traffic and gather new users with Google Share Button
+* Perfect to link your google+ page to your wordpress website. Get more recommendations for your site in Google search and grow your audience on Google+ with Google Follow Button.
 * Works great when published under the Ads Widget
 
 * Google Ads Master Ads Widget
 * Top of the line Google Ads Widget (allows ads styling)
 * Minimal code for a Small system trace with extremely fast page load times
 * For heavy duty wordpress websites where google ads income needs to be reliable and steady
+* Special option available for theme sidebars. Option to align google ad to the left, center or right of the available space. Looking good and integrated is a must. This setting can also be used in any other theme widget locations if you need to align the google ad.
 
 **ADVANCED Version Contains:**
 
 * Display, Hide or Change any Widget Title
 
 * Google Ads Master Viral Widget
+* Includes Google Share button, Google +1 button and Google Share button.
+* Activate the buttons you need and your their bubble count number
 * Perfect to increase your Google Rank and Search Engine Presence with Google Plus Button
 * Increased Google SEO performance
 * Perfect to boost your website traffic and gather new users with Google Share Button
+* Perfect to link your google+ page to your wordpress website. Get more recommendations for your site in Google search and grow your audience on Google+ with Google Follow Button.
 * Works great when published under the Ads Widget
 
 * Google Ads Master Ads Widget
 * Top of the line Google Ads Widget (allows ads styling)
 * Minimal code for a Small system trace with extremely fast page load times
 * For heavy duty wordpress websites where google ads income needs to be reliable and steady
+* Special option available for theme sidebars. Option to align google ad to the left, center or right of the available space. Looking good and integrated is a must. This setting can also be used in any other theme widget locations if you need to align the google ad.
 
 * TechGasp Shortcode Framework v3
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -109,12 +117,36 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 4. Google Ads Widget, Horizontal Small Ad Banner.
 5. Google Ads Widget, Small Square Ad.
 6. Google Ads Widget, Horizontal Ad Banner.
-7. Google Ads Master Viral Widget, Google Plus and Google Share
+7. Google Ads Master Viral Widget, Google Plus, Google Share, Google Follow
 8. Individual Shortcode inside pages and posts. Shortcode framework implementation.
 9. Universal Shortcode inside pages and posts. Shortcode framework implementation.
 
 
 == Changelog ==
+
+= 4.4.1.4 =
+* Getting all widget titles network ready
+* Adding Google Follow Button to Viral Widget
+* Adding special alignment option of google ads for theme sidebars
+
+= 4.4.1.3 =
+* Tweaking Updater
+
+= 4.4.1.2 =
+* Adding Network Warnings and help texts
+
+= 4.4.1.1 =
+* Fixing uninstall, plugin deletion on wordpress network and multi-sites
+
+= 4.4.1.0 =
+* Fixing Shortcodes
+* Fixing Widgets
+* General clean-up and speed boost
+
+= 4.4.0 =
+* Wordpress multi-site or wordpress network ready
+* New screenshots and images
+* Google Share Button tweaked
 
 = 4.3.7 =
 * Code optimization
