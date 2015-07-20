@@ -83,7 +83,7 @@ class google_ads_master_widget_ads extends WP_Widget {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['google_ads_title'], true ); ?> id="<?php echo $this->get_field_id( 'google_ads_title' ); ?>" name="<?php echo $this->get_field_name( 'google_ads_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'google_ads_title' ); ?>"><b><?php _e('Display Widget Title', 'google_ads_master'); ?></b></label></br>
@@ -93,9 +93,9 @@ class google_ads_master_widget_ads extends WP_Widget {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'google_ads_title_new' ); ?>" name="<?php echo $this->get_field_name( 'google_ads_title_new' ); ?>" value="<?php echo $instance['google_ads_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_googleads'], true ); ?> id="<?php echo $this->get_field_id( 'show_googleads' ); ?>" name="<?php echo $this->get_field_name( 'show_googleads' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_googleads' ); ?>"><b><?php _e('Display Google Ads', 'google_ads_master'); ?></b></label>
@@ -106,7 +106,7 @@ class google_ads_master_widget_ads extends WP_Widget {
 	<div class="description">Copy and Paste your google ad script code from Google AdSense website.</div>
 	</p>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<label for="<?php echo $this->get_field_id( 'google_code_align' ); ?>"><b><?php _e('Google Ad Align', 'google_ads_master'); ?></label></b></br>
 	<input id="<?php echo $this->get_field_id( 'google_code_align' ); ?>" name="<?php echo $this->get_field_name( 'google_code_align' ); ?>" value="<?php echo $instance['google_code_align']; ?>" style="width:auto;" />
@@ -114,13 +114,13 @@ class google_ads_master_widget_ads extends WP_Widget {
 	<div class="description">Available options are: <b>left</b>, <b>center</b> and <b>right</b></div>
 	<div class="description">if empty or blank, left alignment is assumed.</div>
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b><?php echo get_option('google_ads_master_name'); ?> Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Get Add-ons">Get Add-ons</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.org/plugins/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Wordpress">RATE US *****</a></p>
 	<?php
 	}
  }

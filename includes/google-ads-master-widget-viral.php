@@ -134,7 +134,7 @@ class google_ads_master_widget_viral extends WP_Widget {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['google_ads_title'], true ); ?> id="<?php echo $this->get_field_id( 'google_ads_title' ); ?>" name="<?php echo $this->get_field_name( 'google_ads_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'google_ads_title' ); ?>"><b><?php _e('Display Widget Title', 'google_ads_master'); ?></b></label></br>
@@ -144,9 +144,9 @@ class google_ads_master_widget_viral extends WP_Widget {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'google_ads_title_new' ); ?>" name="<?php echo $this->get_field_name( 'google_ads_title_new' ); ?>" value="<?php echo $instance['google_ads_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_google_plus'], true ); ?> id="<?php echo $this->get_field_id( 'show_google_plus' ); ?>" name="<?php echo $this->get_field_name( 'show_google_plus' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_google_plus' ); ?>"><b><?php _e('Display Google Plus Button', 'google_ads_master'); ?></b></label>
@@ -155,9 +155,9 @@ class google_ads_master_widget_viral extends WP_Widget {
 	<input type="checkbox" <?php checked( (bool) $instance['google_plus_bubble'], true ); ?> id="<?php echo $this->get_field_id( 'google_plus_bubble' ); ?>" name="<?php echo $this->get_field_name( 'google_plus_bubble' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'google_plus_bubble' ); ?>"><b><?php _e('Google Plus Bubble Count', 'google_ads_master'); ?></b></label>
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_google_share'], true ); ?> id="<?php echo $this->get_field_id( 'show_google_share' ); ?>" name="<?php echo $this->get_field_name( 'show_google_share' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_google_share' ); ?>"><b><?php _e('Display Google Share Button', 'google_ads_master'); ?></b></label>
@@ -166,9 +166,9 @@ class google_ads_master_widget_viral extends WP_Widget {
 	<input type="checkbox" <?php checked( (bool) $instance['google_share_bubble'], true ); ?> id="<?php echo $this->get_field_id( 'google_share_bubble' ); ?>" name="<?php echo $this->get_field_name( 'google_share_bubble' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'google_share_bubble' ); ?>"><b><?php _e('Google Share Bubble Count', 'google_ads_master'); ?></b></label>
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_google_follow'], true ); ?> id="<?php echo $this->get_field_id( 'show_google_follow' ); ?>" name="<?php echo $this->get_field_name( 'show_google_follow' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_google_follow' ); ?>"><b><?php _e('Display Google Follow Button', 'google_ads_master'); ?></b></label>
@@ -178,19 +178,19 @@ class google_ads_master_widget_viral extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'google_follow_bubble' ); ?>"><b><?php _e('Google Follow Bubble Count', 'google_ads_master'); ?></b></label>
 	</p>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<label for="<?php echo $this->get_field_id( 'google_follow_page' ); ?>"><b><?php _e('Google+ User Page Link:', 'google_ads_master'); ?></label></b></br>
 	<input id="<?php echo $this->get_field_id( 'google_follow_page' ); ?>" name="<?php echo $this->get_field_name( 'google_follow_page' ); ?>" value="<?php echo $instance['google_follow_page']; ?>" style="width:auto;" />
 	<div class="description">Example: <b>https://plus.google.com/113505825008581970710/</b></div>
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b><?php echo get_option('google_ads_master_name'); ?> Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Get Add-ons">Get Add-ons</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.org/plugins/google-ads-master/" target="_blank" title="<?php echo get_option('google_ads_master_name'); ?> Wordpress">RATE US *****</a></p>
 	<?php
 	}
  }

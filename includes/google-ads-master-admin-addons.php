@@ -1,5 +1,5 @@
 <?php
-function menu_single_google_ads_admin_addons(){
+function menu_single_google_ads_master_admin_addons(){
 	if ( is_admin() )
 	add_submenu_page( 'google-ads-master', 'Add-ons', 'Add-ons', 'manage_options', 'google-ads-master-admin-addons', 'google_ads_master_admin_addons' );
 }
@@ -7,7 +7,7 @@ function menu_single_google_ads_admin_addons(){
 function google_ads_master_admin_addons(){
 ?>
 <div class="wrap">
-<div style="width:40px; vertical-align:middle; float:left;"><img src="<?php echo plugins_url('../images/techgasp-minilogo.png', __FILE__); ?>" alt="' . esc_attr__( 'TechGasp Plugins') . '" /><br /></div>
+<div style="width:40px; vertical-align:middle; float:left;"><img src="<?php echo plugins_url('images/techgasp-minilogo.png', dirname(__FILE__)); ?>" alt="' . esc_attr__( 'TechGasp Plugins') . '" /><br /></div>
 <h2><b>&nbsp;<?php echo get_option('google_ads_master_name'); ?> Add-ons</b></h2>
 <?php
 if(!class_exists('google_ads_master_admin_addons_table')){
@@ -23,7 +23,7 @@ $wp_list_table->display();
 
 <h2>IMPORTANT: Makes no use of Javascript or Ajax to keep your website fast and conflicts free</h2>
 
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 
 <br>
 
@@ -32,13 +32,12 @@ $wp_list_table->display();
 <a class="button-secondary" href="http://wordpress.techgasp.com/support/" target="_blank" title="TechGasp Support">TechGasp Support</a>
 <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Visit Website"><?php echo get_option('google_ads_master_name'); ?> Info</a>
 <a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master-documentation/" target="_blank" title="Visit Website"><?php echo get_option('google_ads_master_name'); ?> Documentation</a>
-<a class="button-primary" href="http://wordpress.techgasp.com/google-ads-master/" target="_blank" title="Visit Website">Get Add-ons</a>
 </p>
 <?php
 }
 if( is_multisite() ) {
-add_action( 'admin_menu', 'menu_single_google_ads_admin_addons' );
+add_action( 'admin_menu', 'menu_single_google_ads_master_admin_addons' );
 }
 else {
-add_action( 'admin_menu', 'menu_single_google_ads_admin_addons' );
+add_action( 'admin_menu', 'menu_single_google_ads_master_admin_addons' );
 }
